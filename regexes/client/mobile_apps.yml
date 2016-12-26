@@ -5,11 +5,6 @@
 # @license http://www.gnu.org/licenses/lgpl.html LGPL v3 or later
 ###############
 
-# AndroidDownloadManager
-- regex: 'AndroidDownloadManager(?:[ /]([\d\.]+))?'
-  name: 'AndroidDownloadManager'
-  version: '$1'
-
 - regex: 'bPod'
   name: 'bPod'
   version: ''
@@ -19,10 +14,6 @@
   name: 'Facebook'
   version: '$1'
 
-# FeedR
-- regex: 'FeedR(?:/([\d\.]+))?'
-  name: 'FeedR'
-  version: '$1'
 
 # Google Play Kiosk
 - regex: 'com.google.android.apps.magazines'

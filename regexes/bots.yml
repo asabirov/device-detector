@@ -870,37 +870,6 @@
     name: 'Slack Technologies'
     url: 'http://slack.com'
 
-- regex: '(Sogou (web|inst|Pic) spider)|New-Sogou-Spider'
-  name: 'Sogou Spider'
-  category: 'Search bot'
-  url: 'http://www.sogou.com/docs/help/webmasters.htm'
-  producer:
-    name: 'Sohu, Inc.'
-    url: 'http://www.sogou.com'
-
-- regex: 'Sosospider|Sosoimagespider'
-  name: 'Soso Spider'
-  category: 'Search bot'
-  url: 'http://help.soso.com/webspider.htm'
-  producer:
-    name: 'Tencent Holdings'
-    url: 'http://www.soso.com'
-
-- regex: 'Superfeedr bot'
-  name: 'Superfeedr Bot'
-  category: 'Feed Fetcher'
-  url: ''
-  producer:
-    name: 'Superfeedr'
-    url: 'https://superfeedr.com/'
-
-- regex: 'Spinn3r'
-  name: 'Spinn3r'
-  category: 'Crawler'
-  url: 'http://spinn3r.com/robot'
-  producer:
-    name: 'Tailrank Inc'
-    url: 'http://spinn3r.com'
 
 - regex: 'Sputnik(Image)?Bot'
   name: 'Sputnik Bot'
@@ -1135,22 +1104,6 @@
   category: 'Crawler'
   url: 'http://yourls.org'
 
-- regex: 'YRSpider|YYSpider'
-  name: 'Yunyun Bot'
-  category: 'Search bot'
-  url: 'http://www.yunyun.com/SiteInfo.php?r=about'
-  producer:
-    name: 'YunYun'
-    url: 'http://www.yunyun.com'
-
-- regex: 'Zookabot'
-  name: 'Zookabot'
-  category: 'Crawler'
-  url: 'http://zookabot.com'
-  producer:
-    name: 'Hwacha ApS'
-    url: 'http://hwacha.dk'
-
 - regex: 'ZumBot'
   name: 'ZumBot'
   category: 'Search bot'
@@ -1265,9 +1218,6 @@
 
 - regex: 'Willow Internet Crawler'
   name: 'Willow Internet Crawler'
-
-- regex: 'EmailWolf'
-  name: 'EmailWolf'
 
 - regex: 'NetLyzer FastProbe'
   name: 'NetLyzer FastProbe'

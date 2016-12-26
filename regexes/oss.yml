@@ -5,28 +5,6 @@
 # @license http://www.gnu.org/licenses/lgpl.html LGPL v3 or later
 ###############
 
-##########
-# Tizen
-##########
-- regex: 'Tizen[ /]?(\d+[\.\d]+)?'
-  name: 'Tizen'
-  version: '$1'
-
-
-
-##########
-## Sailfish OS
-###########
-- regex: 'Sailfish|Jolla'
-  name: 'Sailfish OS'
-  version: ''
-
-##########
-# YunOS (Android based)
-##########
-- regex: '(?:Ali)?YunOS[ /]?(\d+[\.\d]+)?'
-  name: 'YunOS'
-  version: '$1'
 
 ##########
 # Windows Mobile
@@ -95,16 +73,6 @@
   version: ''
   
   
-##########
-# AmigaOS
-##########
-- regex: 'AmigaOS[ ]?(\d+[\.\d]+)'
-  name: 'AmigaOS'
-  version: '$1'
-
-- regex: 'AmigaOS|AmigaVoyager|Amiga-AWeb'
-  name: 'AmigaOS'
-  version: ''
 
 ##########
 # ThreadX
@@ -149,27 +117,6 @@
 # generic linux match -> end of file
 
 ##########
-# webOS
-##########
-- regex: '(?:webOS|Palm webOS)(?:/(\d+[\.\d]+))?'
-  name: 'webOS'
-  version: '$1'
-
-- regex: '(?:PalmOS|Palm OS)(?:[/ ](\d+[\.\d]+))?|Palm'
-  name: 'palmOS'
-  version: '$1'
-
-- regex: 'Xiino(?:.*v\. (\d+[\.\d]+))?'  # palmOS only browser
-  name: 'palmOS'
-  version: '$1'
-
-
-- regex: 'MorphOS(?:[ /](\d+[\.\d]+))?'
-  name: 'MorphOS'
-  version: '$1'
-
-  
-##########
 # Windows
 ##########
 - regex: 'CYGWIN_NT-10.0|Windows NT 10.0|Windows 10'
@@ -208,38 +155,7 @@
 - regex: 'CYGWIN_NT-5.1|Windows NT 5.1|Windows XP'
   name: 'Windows'
   version: 'XP'
-  
-  
-- regex: 'CYGWIN_NT-5.0|Windows NT 5.0|Windows 2000'
-  name: 'Windows'
-  version: '2000'
-  
-  
-- regex: 'CYGWIN_NT-4.0|Windows NT 4.0|WinNT|Windows NT'
-  name: 'Windows'
-  version: 'NT'
-  
-  
-- regex: 'CYGWIN_ME-4.90|Win 9x 4.90|Windows ME'
-  name: 'Windows'
-  version: 'ME'
-  
-  
-- regex: 'CYGWIN_98-4.10|Win98|Windows 98'
-  name: 'Windows'
-  version: '98'
-  
-  
-- regex: 'CYGWIN_95-4.0|Win32|Win95|Windows 95|Windows_95'
-  name: 'Windows'
-  version: '95'
-  
-  
-- regex: 'Windows 3.1'
-  name: 'Windows'
-  version: '3.1'
-  
-  
+
 - regex: 'Windows'
   name: 'Windows'
   version: ''
@@ -329,17 +245,6 @@
   name: 'iOS'
   version: '4.1'
 
-- regex: 'CFNetwork/485\.2'
-  name: 'iOS'
-  version: '4.0'
-
-- regex: 'CFNetwork/467\.12'
-  name: 'iOS'
-  version: '3.2'
-
-- regex: 'CFNetwork/459'
-  name: 'iOS'
-  version: '3.1'
 
 - regex: '(?:CPU OS|iPh(?:one)?[ _]OS|iOS)[ _/](\d+(?:[_\.]\d+)*)'
   name: 'iOS'
@@ -428,47 +333,10 @@
 ##########
 # BlackBerry
 ##########
-- regex: '(?:BB10;.+Version|Black[Bb]erry[0-9a-z]+|Black[Bb]erry.+Version)/(\d+[\.\d]+)'
-  name: 'BlackBerry OS'
-  version: '$1'
-  
-  
-- regex: 'RIM Tablet OS (\d+[\.\d]+)'
-  name: 'BlackBerry Tablet OS'
-  version: '$1'
-  
-  
-- regex: 'RIM Tablet OS|QNX|Play[Bb]ook'
-  name: 'BlackBerry Tablet OS'
-  version: ''
-  
-  
+
 - regex: 'BlackBerry'
   name: 'BlackBerry OS'
   version: ''
-  
-- regex: 'bPod'
-  name: 'BlackBerry OS'
-  version: ''
-
-
-##########
-# Haiku OS
-##########
-- regex: 'Haiku'
-  name: 'Haiku OS'
-  version: ''
-
-
-##########
-# BeOS
-##########
-- regex: 'BeOS'
-  name: 'BeOS'
-  version: ''
-
-
-
 
 ##########
 # Symbian
@@ -519,54 +387,7 @@
 
 
 
-##########
-# Firefox OS
-##########
-- regex: '(?:Mobile|Tablet);.+Firefox/\d+\.\d+'
-  name: 'Firefox OS'
-  version: ''
 
-
-##########
-# RISC OS
-##########
-- regex: 'RISC OS(?:-NC)?(?:[ /](\d+[\.\d]+))?'
-  name: 'RISC OS'
-  version: '$1'
-
-
-##########
-# Inferno
-##########
-- regex: 'Inferno(?:[ /](\d+[\.\d]+))?'
-  name: 'Inferno'
-  version: '$1'
-
-
-##########
-# Bada
-##########
-- regex: 'bada(?:[ /](\d+[\.\d]+))'
-  name: 'Bada'
-  version: '$1'
-  
-  
-- regex: 'bada'
-  name: 'Bada'
-  version: ''
-
-
-##########
-# Brew
-##########
-- regex: '(?:Brew MP|BREW|BMP)(?:[ /](\d+[\.\d]+))'
-  name: 'Brew'
-  version: '$1'
-
-
-- regex: 'Brew MP|BREW|BMP'
-  name: 'Brew'
-  version: ''
 
   
 ##########
@@ -606,21 +427,12 @@
 ##########
 # Unix
 ##########
-- regex: '(?:SunOS|Solaris)(?:[/ ](\d+[\.\d]+))?'
-  name: 'Solaris'
-  version: '$1'
-  
   
 - regex: 'AIX(?:[/ ]?(\d+[\.\d]+))?'
   name: 'AIX'
   version: '$1'
   
-  
-- regex: 'HP-UX(?:[/ ]?(\d+[\.\d]+))?'
-  name: 'HP-UX'
-  version: '$1'
-  
-  
+
 - regex: 'FreeBSD(?:[/ ]?(\d+[\.\d]+))?'
   name: 'FreeBSD'
   version: '$1'
@@ -634,18 +446,7 @@
 - regex: 'OpenBSD(?:[/ ]?(\d+[\.\d]+))?'
   name: 'OpenBSD'
   version: '$1'
-  
-  
-- regex: 'DragonFly(?:[/ ]?(\d+[\.\d]+))?'
-  name: 'DragonFly'
-  version: '$1'
-  
-  
-- regex: 'Syllable(?:[/ ]?(\d+[\.\d]+))?'
-  name: 'Syllable'
-  version: '$1'
-  
-  
+
 - regex: 'IRIX(?:;64)?(?:[/ ]?(\d+[\.\d]+))'
   name: 'IRIX'
   version: '$1'
@@ -687,16 +488,7 @@
 - regex: 'PlayStation ((?:Portable|Vita))'
   name: 'PlayStation Portable'
   version: '$1'
-  
-  
-  
-##########
-# IBM
-##########
-- regex: 'OS/2'
-  name: 'OS/2'
-  version: ''
-  
+
 
 
 ###########

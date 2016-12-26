@@ -37,14 +37,6 @@
   name: 'Miro'
   version: '$1'
 
-- regex: 'NexPlayer(?:/(\d+[\.\d]+))?'
-  name: 'NexPlayer'
-  version: '$1'
-
-- regex: 'Nightingale(?:/([\d\.]+))?'
-  name: 'Nightingale'
-  version: '$1'
-
 - regex: 'QuickTime(?:(?:(?:.+qtver=)|(?:(?: E-)?[\./]))([\d\.]+))?'
   name: 'QuickTime'
   version: '$1'
